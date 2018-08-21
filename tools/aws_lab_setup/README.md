@@ -8,7 +8,7 @@ This provisioner automatically sets up lab environments for Ansible training. It
 
 ## AWS Setup
 
-The setup of the environments is done via Ansible playbooks, the actual VMs are set up on AWS. The `provision_lab.yml` playbook creates instances, configures them for password authentication and creates an inventory file for each user with their IPs and credentials. An instructor inventory file is also created in the current directory which will let the instructor access the nodes of any student by simply targeting the username as a host group. The lab is created in `us-east-1` by default.  Currently the setup only works with `us-east-1`, `us-west-1`, `eu-west-1`, `ap-southeast-1`, `ap-southeast-2`, `ap-south-1` and `ap-northeast-1`.
+The setup of the environments is done via Ansible playbooks, the actual VMs are set up on AWS. The `provision_lab.yml` playbook creates instances, configures them for password authentication and creates an inventory file for each user with their IPs and credentials. An instructor inventory file is also created in the current directory which will let the instructor access the nodes of any student by simply targeting the username as a host group. The lab is created in `us-east-1` by default.  Currently the setup only works with `us-east-1`, `us-west-1`, `us-west-2`, `eu-west-1`, `ap-southeast-1`, `ap-southeast-2`, `ap-south-1` and `ap-northeast-1`.
 
 ## Email Options
 
