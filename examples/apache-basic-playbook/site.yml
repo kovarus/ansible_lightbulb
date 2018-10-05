@@ -39,7 +39,7 @@
         state: started
         enabled: yes
 
-    - name: Queue build of a project in Jenkins
+    - name: Check that I get a web page
       uri:
         url: "http://{{ ansible_host }}"
         method: GET
