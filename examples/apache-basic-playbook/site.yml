@@ -39,6 +39,12 @@
         state: started
         enabled: yes
 
+    - name: Queue build of a project in Jenkins
+      uri:
+        url: "http://{{ ansible_host }}"
+        method: GET
+        status_code: 200
+
   handlers:
     - name: restart-apache-service
       service:
