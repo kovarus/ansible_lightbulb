@@ -18,3 +18,9 @@
     service:
       name: httpd
       state: started
+
+  - name: Queue build of a project in Jenkins
+    uri:
+      url: "http://{{ ansible_host }}"
+      method: GET
+      status_code: 200
